@@ -16,6 +16,11 @@ public interface ArticleMapper extends IMyMapper<Article> {
 
   String COLUMN_LIST = "article.id,title,introduction,article.gmt_create AS gmtCreate,article.gmt_modified AS gmtModified";
 
+
+  /**
+   * 所有的文章
+   *
+   * */
   @Select({
                   "SELECT",
                   COLUMN_LIST,

@@ -30,12 +30,13 @@ public interface IResumeService {
   /**
    * 查询简历
    */
-  Resume getResume();
+  public Resume getResume();
 
   /**
    * 更新简历
    *
    * @param form 表单
    */
-  void updateResume(ResumeModifyForm form, Resume resume);
+  public void updateResume(ResumeModifyForm form, Resume resume);
+
 }

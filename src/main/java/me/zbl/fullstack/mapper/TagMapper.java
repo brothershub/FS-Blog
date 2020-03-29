@@ -48,6 +48,10 @@ public interface TagMapper extends IMyMapper<Tag> {
           })
   List<TagView> selectAllTagView();
 
+  /**
+   * 通过名字查询tag
+   *
+   * */
   @Select({
                   "SELECT id,",
                   "`name` FROM tag WHERE `name` = #{tagName}"
